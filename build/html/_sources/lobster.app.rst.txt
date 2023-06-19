@@ -1,0 +1,29 @@
+lobster.app package
+===================
+
+Submodules
+----------
+
+lobster.app.backends module
+---------------------------
+
+.. automodule:: lobster.app.backends
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+lobster.app.base module
+-----------------------
+
+.. automodule:: lobster.app.base
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: lobster.app
+   :members:
+   :undoc-members:
+   :show-inheritance:

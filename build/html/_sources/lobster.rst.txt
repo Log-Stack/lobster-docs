@@ -1,0 +1,65 @@
+lobster package
+===============
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   lobster.app
+   lobster.connector
+   lobster.consumer
+   lobster.producer
+   lobster.testing
+
+Submodules
+----------
+
+lobster.config module
+---------------------
+
+.. automodule:: lobster.config
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+lobster.log module
+------------------
+
+.. automodule:: lobster.log
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+lobster.main module
+-------------------
+
+.. automodule:: lobster.main
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+lobster.schema module
+---------------------
+
+.. automodule:: lobster.schema
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+lobster.ssh module
+------------------
+
+.. automodule:: lobster.ssh
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: lobster
+   :members:
+   :undoc-members:
+   :show-inheritance:

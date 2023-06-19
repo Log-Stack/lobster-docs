@@ -1,0 +1,53 @@
+lobster.consumer package
+========================
+
+Submodules
+----------
+
+lobster.consumer.base module
+----------------------------
+
+.. automodule:: lobster.consumer.base
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+lobster.consumer.maria module
+-----------------------------
+
+.. automodule:: lobster.consumer.maria
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+lobster.consumer.mssql module
+-----------------------------
+
+.. automodule:: lobster.consumer.mssql
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+lobster.consumer.mysql module
+-----------------------------
+
+.. automodule:: lobster.consumer.mysql
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+lobster.consumer.oracle module
+------------------------------
+
+.. automodule:: lobster.consumer.oracle
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: lobster.consumer
+   :members:
+   :undoc-members:
+   :show-inheritance:

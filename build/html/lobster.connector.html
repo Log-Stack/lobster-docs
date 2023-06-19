@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>lobster.connector package &#8212; Lobster 0.0.0 문서</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/translations.js"></script>
+    <link rel="index" title="색인" href="genindex.html" />
+    <link rel="search" title="검색" href="search.html" />
+    <link rel="next" title="lobster.consumer package" href="lobster.consumer.html" />
+    <link rel="prev" title="lobster.app package" href="lobster.app.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="lobster-connector-package">
+<h1>lobster.connector package<a class="headerlink" href="#lobster-connector-package" title="이 제목에 대한 퍼머링크">¶</a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="이 제목에 대한 퍼머링크">¶</a></h2>
+</section>
+<section id="module-lobster.connector.base">
+<span id="lobster-connector-base-module"></span><h2>lobster.connector.base module<a class="headerlink" href="#module-lobster.connector.base" title="이 제목에 대한 퍼머링크">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="lobster.connector.base.BaseConnector">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lobster.connector.base.</span></span><span class="sig-name descname"><span class="pre">BaseConnector</span></span><a class="headerlink" href="#lobster.connector.base.BaseConnector" title="이 정의에 대한 퍼머링크">¶</a></dt>
+<dd><p>기반 클래스: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="lobster.connector.base.BaseConnector.bulk">
+<span class="sig-name descname"><span class="pre">bulk</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">logs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">Dict</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lobster.connector.base.BaseConnector.bulk" title="이 정의에 대한 퍼머링크">¶</a></dt>
+<dd><p>save to database</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lobster.connector.base.BaseConnector.create">
+<span class="sig-name descname"><span class="pre">create</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#lobster.connector.base.BaseConnector.create" title="이 정의에 대한 퍼머링크">¶</a></dt>
+<dd><p>database create</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lobster.connector.base.BaseConnector.deactivate">
+<span class="sig-name descname"><span class="pre">deactivate</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#lobster.connector.base.BaseConnector.deactivate" title="이 정의에 대한 퍼머링크">¶</a></dt>
+<dd><p>database is_active=False</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lobster.connector.base.BaseConnector.delete">
+<span class="sig-name descname"><span class="pre">delete</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#lobster.connector.base.BaseConnector.delete" title="이 정의에 대한 퍼머링크">¶</a></dt>
+<dd><p>database delete</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lobster.connector.base.BaseConnector.get_db_logs">
+<span class="sig-name descname"><span class="pre">get_db_logs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">server_filter_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">table_filter_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start_time</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">datetime</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">100000</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">dict</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#lobster.connector.base.BaseConnector.get_db_logs" title="이 정의에 대한 퍼머링크">¶</a></dt>
+<dd><p>get data from database</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lobster.connector.base.BaseConnector.get_server_filters">
+<span class="sig-name descname"><span class="pre">get_server_filters</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">server_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lobster.connector.base.BaseConnector.get_server_filters" title="이 정의에 대한 퍼머링크">¶</a></dt>
+<dd><p>get ServerFilters and makes schema</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lobster.connector.base.BaseConnector.get_servers">
+<span class="sig-name descname"><span class="pre">get_servers</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="lobster.html#lobster.schema.ServerSchema" title="lobster.schema.ServerSchema"><span class="pre">lobster.schema.ServerSchema</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#lobster.connector.base.BaseConnector.get_servers" title="이 정의에 대한 퍼머링크">¶</a></dt>
+<dd><p>get Servers</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lobster.connector.base.BaseConnector.get_table_filters">
+<span class="sig-name descname"><span class="pre">get_table_filters</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">server_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lobster.connector.base.BaseConnector.get_table_filters" title="이 정의에 대한 퍼머링크">¶</a></dt>
+<dd><p>get TableFilters and makes schema</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lobster.connector.base.BaseConnector.prep">
+<span class="sig-name descname"><span class="pre">prep</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">logs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">Dict</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lobster.connector.base.BaseConnector.prep" title="이 정의에 대한 퍼머링크">¶</a></dt>
+<dd><p>db 저장 하기 전 shema 변환</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lobster.connector.base.BaseConnector.update">
+<span class="sig-name descname"><span class="pre">update</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#lobster.connector.base.BaseConnector.update" title="이 정의에 대한 퍼머링크">¶</a></dt>
+<dd><p>database update</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-lobster.connector.maria">
+<span id="lobster-connector-maria-module"></span><h2>lobster.connector.maria module<a class="headerlink" href="#module-lobster.connector.maria" title="이 제목에 대한 퍼머링크">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="lobster.connector.maria.MariaConnector">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lobster.connector.maria.</span></span><span class="sig-name descname"><span class="pre">MariaConnector</span></span><a class="headerlink" href="#lobster.connector.maria.MariaConnector" title="이 정의에 대한 퍼머링크">¶</a></dt>
+<dd><p>기반 클래스: <a class="reference internal" href="#lobster.connector.base.BaseConnector" title="lobster.connector.base.BaseConnector"><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseConnector</span></code></a></p>
+<p>asdfasdf</p>
+</dd></dl>
+
+</section>
+<section id="module-lobster.connector.mssql">
+<span id="lobster-connector-mssql-module"></span><h2>lobster.connector.mssql module<a class="headerlink" href="#module-lobster.connector.mssql" title="이 제목에 대한 퍼머링크">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="lobster.connector.mssql.MSSQLConnector">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lobster.connector.mssql.</span></span><span class="sig-name descname"><span class="pre">MSSQLConnector</span></span><a class="headerlink" href="#lobster.connector.mssql.MSSQLConnector" title="이 정의에 대한 퍼머링크">¶</a></dt>
+<dd><p>기반 클래스: <a class="reference internal" href="#lobster.connector.base.BaseConnector" title="lobster.connector.base.BaseConnector"><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseConnector</span></code></a></p>
+<p>asdfasdf</p>
+</dd></dl>
+
+</section>
+<section id="module-lobster.connector.mysql">
+<span id="lobster-connector-mysql-module"></span><h2>lobster.connector.mysql module<a class="headerlink" href="#module-lobster.connector.mysql" title="이 제목에 대한 퍼머링크">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="lobster.connector.mysql.MysqlConnector">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lobster.connector.mysql.</span></span><span class="sig-name descname"><span class="pre">MysqlConnector</span></span><a class="headerlink" href="#lobster.connector.mysql.MysqlConnector" title="이 정의에 대한 퍼머링크">¶</a></dt>
+<dd><p>기반 클래스: <a class="reference internal" href="#lobster.connector.base.BaseConnector" title="lobster.connector.base.BaseConnector"><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseConnector</span></code></a></p>
+<p>asdfasdf</p>
+</dd></dl>
+
+</section>
+<section id="module-lobster.connector.opensearch">
+<span id="lobster-connector-opensearch-module"></span><h2>lobster.connector.opensearch module<a class="headerlink" href="#module-lobster.connector.opensearch" title="이 제목에 대한 퍼머링크">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="lobster.connector.opensearch.OpenSearchConnector">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lobster.connector.opensearch.</span></span><span class="sig-name descname"><span class="pre">OpenSearchConnector</span></span><a class="headerlink" href="#lobster.connector.opensearch.OpenSearchConnector" title="이 정의에 대한 퍼머링크">¶</a></dt>
+<dd><p>기반 클래스: <a class="reference internal" href="#lobster.connector.base.BaseConnector" title="lobster.connector.base.BaseConnector"><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseConnector</span></code></a></p>
+<p>asdfasdf</p>
+</dd></dl>
+
+</section>
+<section id="module-lobster.connector.oracle">
+<span id="lobster-connector-oracle-module"></span><h2>lobster.connector.oracle module<a class="headerlink" href="#module-lobster.connector.oracle" title="이 제목에 대한 퍼머링크">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="lobster.connector.oracle.OracleConnector">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lobster.connector.oracle.</span></span><span class="sig-name descname"><span class="pre">OracleConnector</span></span><a class="headerlink" href="#lobster.connector.oracle.OracleConnector" title="이 정의에 대한 퍼머링크">¶</a></dt>
+<dd><p>기반 클래스: <a class="reference internal" href="#lobster.connector.base.BaseConnector" title="lobster.connector.base.BaseConnector"><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseConnector</span></code></a></p>
+<p>asdfasdf</p>
+</dd></dl>
+
+</section>
+<section id="module-lobster.connector">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-lobster.connector" title="이 제목에 대한 퍼머링크">¶</a></h2>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Lobster</a></h1>
+
+
+
+
+
+
+
+
+<h3>탐색</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="lobster.html">lobster package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="lobster.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="lobster.app.html">lobster.app package</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">lobster.connector package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-lobster.connector.base">lobster.connector.base module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-lobster.connector.maria">lobster.connector.maria module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-lobster.connector.mssql">lobster.connector.mssql module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-lobster.connector.mysql">lobster.connector.mysql module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-lobster.connector.opensearch">lobster.connector.opensearch module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-lobster.connector.oracle">lobster.connector.oracle module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-lobster.connector">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="lobster.consumer.html">lobster.consumer package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="lobster.producer.html">lobster.producer package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="lobster.testing.html">lobster.testing package</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="lobster.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lobster.html#module-lobster.config">lobster.config module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lobster.html#module-lobster.log">lobster.log module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lobster.html#lobster-main-module">lobster.main module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lobster.html#module-lobster.schema">lobster.schema module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lobster.html#module-lobster.ssh">lobster.ssh module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lobster.html#module-lobster">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="lobster.html">lobster package</a><ul>
+      <li>Previous: <a href="lobster.app.html" title="이전 장">lobster.app package</a></li>
+      <li>Next: <a href="lobster.consumer.html" title="다음 장">lobster.consumer package</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">빠른 검색</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="이동" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2023, logstack.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 7.0.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
+      
+      |
+      <a href="_sources/lobster.connector.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

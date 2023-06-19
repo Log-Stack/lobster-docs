@@ -1,0 +1,53 @@
+lobster.producer package
+========================
+
+Submodules
+----------
+
+lobster.producer.base module
+----------------------------
+
+.. automodule:: lobster.producer.base
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+lobster.producer.maria module
+-----------------------------
+
+.. automodule:: lobster.producer.maria
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+lobster.producer.mssql module
+-----------------------------
+
+.. automodule:: lobster.producer.mssql
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+lobster.producer.mysql module
+-----------------------------
+
+.. automodule:: lobster.producer.mysql
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+lobster.producer.oracle module
+------------------------------
+
+.. automodule:: lobster.producer.oracle
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: lobster.producer
+   :members:
+   :undoc-members:
+   :show-inheritance:

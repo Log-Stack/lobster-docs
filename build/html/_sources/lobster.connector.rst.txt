@@ -1,0 +1,61 @@
+lobster.connector package
+=========================
+
+Submodules
+----------
+
+lobster.connector.base module
+-----------------------------
+
+.. automodule:: lobster.connector.base
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+lobster.connector.maria module
+------------------------------
+
+.. automodule:: lobster.connector.maria
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+lobster.connector.mssql module
+------------------------------
+
+.. automodule:: lobster.connector.mssql
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+lobster.connector.mysql module
+------------------------------
+
+.. automodule:: lobster.connector.mysql
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+lobster.connector.opensearch module
+-----------------------------------
+
+.. automodule:: lobster.connector.opensearch
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+lobster.connector.oracle module
+-------------------------------
+
+.. automodule:: lobster.connector.oracle
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: lobster.connector
+   :members:
+   :undoc-members:
+   :show-inheritance:
